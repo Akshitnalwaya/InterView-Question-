@@ -3,13 +3,7 @@
 ## ❓ Why does a React component need to return a single root element?
 
 ✅ **Answer:**  
-React components must return a single root element because JSX gets compiled into `React.createElement()` calls, which expects one parent element.
-
-```mermaid
-graph TD
-    A[JSX] --> B[React.createElement]
-    B --> C[Single DOM node]
-    D[Multiple elements] --> E[Syntax Error]
+React components must return a single root element because the JSX returned from a component gets compiled into `React.createElement()` calls, and that function expects only one parent element to wrap all child elements. If multiple siblings are returned without a parent, it causes a syntax error.
 
 ✅ **Bonus Tip:**  
 Instead of adding unnecessary `<div>`s, you can use React Fragments (`<>...</>`) to avoid adding extra nodes to the DOM:
