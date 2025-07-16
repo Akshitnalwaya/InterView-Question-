@@ -1,1 +1,1 @@
-![Variable in Hooks](./var-in-hooks.png)
+![Variable in Hooks](./interview-questions/var-in-hooks.png)
